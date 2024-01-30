@@ -1,9 +1,9 @@
 import { OpenAI } from "openai";
 //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
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: "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",
 });
-console.log(process.env.OPENAI_API_KEY);
+
 const response = await openai.chat.completions.create({
   model: "gpt-3.5-turbo",
   messages: [
